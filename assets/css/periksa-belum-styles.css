@@ -1,0 +1,35 @@
+@import url(styles.css);
+
+.header__content__kiri {
+  max-width: 900px;
+  padding-top: 3rem;
+
+  text-align: left;
+}
+
+.status__section {
+  padding: 24px;
+
+  align-items: center;
+}
+
+.deskripsi {
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 14px;
+
+  text-align: center;
+}
+
+.tombol {
+  transition: var(--global-trans);
+
+  color: #fff;
+  border-color: var(--second);
+  background-color: var(--second);
+}
+
+.tombol:hover {
+  color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}

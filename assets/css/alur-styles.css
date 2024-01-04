@@ -1,0 +1,209 @@
+@import url(styles.css);
+
+/* alur section */
+.alur__section {
+  margin: auto;
+  padding: 0 120px;
+}
+
+.alur {
+  padding: 48px 0;
+}
+
+.alur h2 {
+  font-size: 24px;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--main);
+}
+
+.alur__card {
+  padding: 84px;
+
+  border: 3px solid var(--main);
+  border-radius: 1rem;
+}
+
+.alur__left {
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 84px 24px 0;
+
+  text-align: center;
+
+  border-right: 3px solid var(--main);
+
+  align-items: center;
+  justify-content: center;
+}
+
+.alur__left i {
+  font-size: 180px;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--main);
+}
+
+.alur__right {
+  padding: 24px 0 24px 84px;
+}
+
+.alur__right h5 {
+  margin-bottom: 24px;
+}
+
+.alur__right ol li {
+  font-size: var(--fz-2);
+
+  margin-bottom: 0.75rem;
+}
+
+.alur__right ul li {
+  font-size: var(--fz-2);
+
+  margin-bottom: 0.75rem;
+
+  list-style-type: square;
+}
+
+.link__disini {
+  font-weight: 500;
+
+  transition: var(--global-trans);
+  text-decoration: underline;
+}
+
+.link__disini:hover {
+  color: blue;
+}
+
+/* faq section */
+.faq__section {
+  width: 84%;
+  margin: auto;
+}
+
+.question__box {
+  margin-bottom: 24px;
+  padding: 2.5rem 3rem;
+
+  border: 3px solid var(--main);
+  border-radius: var(--b-rad);
+}
+
+.qb__head {
+  font-size: 20px;
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qb__head[aria-expanded="false"] span {
+  transition: var(--global-trans);
+
+  color: var(--black);
+}
+
+.qb__head[aria-expanded="true"] span {
+  color: var(--main);
+}
+
+.qb__head i {
+  font-size: 18px;
+
+  margin-left: 20px;
+
+  transition: var(--global-trans);
+}
+
+.qb__head[aria-expanded="true"] i {
+  transform: rotate(135deg);
+}
+
+.qb__body {
+  margin-top: 1.5rem;
+  padding-right: 4rem;
+}
+
+.qb__body ol {
+  font-size: var(--fz-2);
+}
+
+/* tablet */
+@media screen and (max-width: 991px) {
+  .alur__section {
+    width: 96%;
+    padding: 0;
+  }
+
+  .alur {
+    padding: 40px 0;
+  }
+
+  .alur__card {
+    padding: 40px;
+  }
+
+  .alur__left {
+    padding: 24px 24px 24px 0;
+  }
+
+  .alur__left i {
+    font-size: 144px;
+  }
+
+  .alur__right {
+    padding: 24px 0 24px 24px;
+  }
+
+  /* faq section */
+  .faq__section {
+    width: 100%;
+  }
+
+  .question__box {
+    padding: 2rem 2.5rem;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+  .alur {
+    padding: 30px 0;
+  }
+
+  .alur__left {
+    padding: 0 0 24px;
+
+    border: none;
+  }
+
+  .alur__left i {
+    font-size: 120px;
+  }
+
+  .alur__right {
+    padding: 0;
+  }
+
+  /* faq section */
+  .question__box {
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .qb__head {
+    font-size: 18px;
+  }
+
+  .qb__body {
+    margin-top: 1rem;
+    padding-right: 2rem;
+  }
+}
